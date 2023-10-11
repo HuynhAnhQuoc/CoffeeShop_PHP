@@ -1,0 +1,54 @@
+main 
+{
+    display: flex;
+    justify-content: center;
+}
+.setting-content
+{
+    background-color: #000;
+    padding: 30px;
+    width: 500px;
+}
+.header-setting
+{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.setting-text
+{
+    margin: 12px 0;
+    font-size: 2rem;
+    color: #fff;
+}
+.setting-text input
+{
+    width: 100%;
+    padding: 12px;
+    background-color: aliceblue;
+    border: none;
+    margin: 8px 0;
+    font-size: 1.6rem;
+}
+
+.setting-label
+{
+    display: flex;
+
+}
+.btn-agree
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #c49f6d;
+    text-align: center;
+    font-size: 3rem;
+}
+.btn-agree:hover
+{
+    opacity: 0.8;
+}

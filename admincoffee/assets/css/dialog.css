@@ -1,0 +1,59 @@
+/* ------------------------dialog----------------------- */
+
+.cart-dialog {
+    position: fixed;
+    left: 50%;
+    top: 104px;
+    transform: translateX(-50%);
+    width: 300px;
+    max-width: calc(100% - 32px);
+    min-height: 56px;
+    padding: 0px;
+    background-color: #eff0f5;
+    border: none;
+    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
+    animation: dialogFadeIn linear .6s, dialogFadeOut linear 0.4s 2s forwards;
+    display: none;
+	font-size: 16px;
+}
+
+.cart-dialog .dialog-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.cart-dialog .dialog-content span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #d2691eb0;
+    margin-right: 5px;
+}
+
+.cart-dialog .dialog-icon {
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+.cart-dialog .dialog-text {
+
+}
+
+@keyframes dialogFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+    }
+}
+
+@keyframes dialogFadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-30px) translateX(-50%);
+    }
+}

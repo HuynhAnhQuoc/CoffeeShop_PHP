@@ -1,0 +1,158 @@
+.container-pay, .pay-confirm{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  display: none;
+  overflow-y: scroll;
+}
+.container-pay{
+  z-index: 999;
+}
+.pay-confirm{
+  z-index: 100;
+  align-items: center;
+}
+.form-pay {
+  width: 525px;
+  background-color: var(--main-color);
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
+  margin: calc(50vh - 314px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 3%;
+  animation: show linear .4s;
+}
+h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 100%;
+  color: var(--text-color);
+  border-bottom: 3px solid var(--sub-color);
+  text-align: center;
+}
+
+.pay-close, .confirm-close{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 25px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.pay-close:hover,
+.confirm-close:hover {
+  color: var(--sub-color);
+}
+
+.pay-input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: var(--text-color);
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-top: 8px;
+}
+.pay-input:focus {
+  border-bottom: 2px solid var(--sub-color);
+}
+
+.pay-text {
+  color: var(--text-color);
+}
+.pay-text:before {
+  content: attr(type);
+  display: block;
+  margin: 20px 0 0;
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+.btn-pay {
+  float: right;
+  padding: 8px 12px;
+  margin: 20px 0 0;
+  font-size: 1.8rem;
+  /* font-family: "Montserrat", sans-serif; */
+  border: 2px solid var(--text-color);
+  background: 0;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-pay:hover {
+  border: 2px solid var(--sub-color);
+  background: var(--sub-color);
+  color: var(--main-color);
+}
+
+.select-pay {
+  margin-top: 8px;
+  padding: 8px;
+  border: none;
+  background-color: var(--text-color);
+  cursor: pointer;
+  color: var(--main-color);
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.select-pay:focus {
+  outline: none;
+}
+
+.p-pay {
+}
+
+.pay-confirm .confirm-container {
+  width: 400px;
+  background: #ccc;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  /* font-family: "Montserrat", sans-serif; */
+  position: relative;
+  animation: show linear .4s forwards;
+}
+
+.text-confirm {
+  margin: 5px 0;
+  font-size: 1.8rem;
+}
+
+.pay-confirm .confirm-footer {
+  display: flex;
+  justify-content: right;
+  margin-top: 5px;
+}
+
+.pay-confirm .confirm-footer button {
+  font-size: 16px;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-weight: 600;
+}
+
+.pay-confirm .confirm-footer .btn-agree {
+  background-color: var(--sub-color);
+}
+
+.pay-confirm .confirm-footer button:hover {
+  opacity: 0.8;
+}

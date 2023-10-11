@@ -1,0 +1,202 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.Contaier-btn
+{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.Contaier-btn button 
+{
+    width: 70px;
+    padding: 5px 10px;
+    margin: 10p;
+    margin-left: 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.insert-btn
+{
+    
+    background: rgb(60, 0, 255) ;
+
+}
+.delete-btn
+{
+    background: red;
+}
+.update-btn {
+    background-color: rgb(37, 164, 65);
+}
+.insert-btn:hover,
+.delete-btn:hover,
+.update-btn:hover{
+    opacity: 0.6;
+}
+
+/* ----------------insert---------------- */
+
+.insert, .update
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;  
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+
+    
+}
+
+.insert-container, .update-container
+{
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    position: relative;
+    box-shadow: 1px 1px 6px 0 rgb(0 , 0 ,0 ,0.2 );
+    width: 350px;
+    animation: show linear .4s;
+}
+.insert-header, .update-header
+{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 5px;
+    color: #c49f6d;
+}
+.btn-close
+{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #c49f6d;
+    font-size: 1.6rem;
+}
+.btn-close:hover {
+    opacity: 0.7;
+}
+.insert-table, .update-table
+{
+    color: white;
+    width: 100%;
+}
+
+.text-table {
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.insert-table tr, .update-table tr
+{
+    line-height: 30px;
+}
+.insert-table input, .update-table input{
+    width:100%;
+    font-size: 1.6rem;
+    padding: 6px;
+    margin: 4px 0;
+}
+
+.insert-table input:focus,
+.update-table input:focus{
+    outline: none;
+}
+
+.text-btn
+{
+    text-align: right;
+    margin-top: 10px;
+}
+.btn-OK, .btn-up-OK
+{
+    padding: 10px 40px;
+    margin: 5px 0;
+    color: #000;
+    font-weight: 700;
+    background-color: #c49f6d;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.btn-up-OK:hover, .btn-OK:hover {
+    opacity: 0.7;
+}
+
+.delete {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;  
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+.delete-container
+{
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    position: relative;
+    box-shadow: 1px 1px 6px 0 rgb(0 , 0 ,0 ,0.2 );
+    width: 350px;
+    animation: show linear .4s;
+}
+.delete-dis
+{
+    text-align: center;
+    margin-top: 10px;
+}
+.delete-btn-agree
+{
+    color: #000;
+    background-color: #c49f6d;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+.delete-btn-agree:hover {
+    opacity: 0.7;
+}
+.text-delete
+{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes close {
+    to {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}

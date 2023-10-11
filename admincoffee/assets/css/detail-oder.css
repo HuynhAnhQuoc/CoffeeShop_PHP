@@ -1,0 +1,93 @@
+.method-oder
+{
+    background-color:#fff;
+    width: 100%;
+    margin: 30px 0;
+    padding: 10px;
+    font-size: 1.8rem;
+
+}
+.item,.header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.confirm-btn {
+    background: red;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+}
+.confirm-btn:hover,
+.oder .oder-btn:hover
+{
+    opacity: 0.6;
+}
+.confirm
+{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    background-color: rgba(0 , 0 , 0 ,0.2);
+}
+.confirm .confirm-content
+{
+    background-color: #000;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    box-shadow: 1px 1px 6px 0 rgb(0 , 0 ,0 ,0.2 );
+}
+.confirm .header-confirm
+{
+    font-size: 20px;
+    color: #c49f6d;
+    margin-bottom: 5px;
+}
+.btn-close
+{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: 600;
+}
+.btn-confirm
+{
+    text-align: right;
+    margin-top: 10px;
+}
+.btn-confirm .btn-complete
+{
+    background-color: #c49f6d;
+    padding: 10px;
+}
+
+.btn-confirm .btn-cancel
+{
+    background-color: #fff;
+    padding: 10px;
+}
+
+.flex-3 {
+    flex: 3;
+    text-align: center;
+}
+
+.flex-4{
+    flex: 1;
+    text-align: center;
+}

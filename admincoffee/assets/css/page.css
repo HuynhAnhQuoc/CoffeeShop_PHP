@@ -1,0 +1,35 @@
+.page
+{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.page a {
+    border: none;
+    padding: 0 10px;
+    height: 30px;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
+
+.page a:hover
+{
+    opacity: 0.8;
+}
+
+.page .choose-page
+{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #f03d6d;
+}
+
+.back-page {
+    margin-right: 10px;
+}
+
+.up-page {
+    margin-left: 10px;
+}

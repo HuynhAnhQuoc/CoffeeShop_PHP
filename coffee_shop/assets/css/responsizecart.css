@@ -1,0 +1,115 @@
+/* PC */
+@media (min-width: 64em)
+{
+
+}
+
+/* Tablet && Mobli */
+@media (max-width: 63.9375em)
+{
+
+    .container-bottom {
+        padding: 80px 0;
+    }
+
+    .pay-right {
+        margin-left: 0;
+        margin-top: 30px;
+        bottom: 0;
+        box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .cart-content {
+        flex-direction: column;
+    }
+
+    .cart-pay .cart-pay-header,
+    .cart-pay .cart-total,
+    .cart-pay .cart-provisional {
+        display: none;
+    }
+
+    .pay-right .respon-pay {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .pay-right .into-money {
+        padding: 0 5px;
+    }
+
+    .pay-right .cart-payment {
+        margin-left: 10px;
+    }
+
+    .pay-right .into-money>div {
+        padding: 12px 0;
+    }
+
+    .cart-content-pay .cart-payment-btn {
+        height: 100%;
+    }
+
+    .cart-content-pay .total-item-two {
+        display: inline;
+    }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em)
+{
+    .cart-content-pay .cart-promotion input,
+    .cart-content-pay .apply-btn,
+    .pay-right .into-money,
+    .pay-right .cart-payment {
+        flex: 50%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em)
+{
+    .cart-content-left .cart-item {
+        flex-direction: column;
+    }
+
+    .cart-content-left .content {
+        width: 100%;
+    }
+
+    .cart-content-left .cart-item img {
+        width: 80px;
+    }
+
+    .cart-content-left .footer {
+        width: 100%;
+    }
+
+    .cart-content-left .footer-item {
+        margin-top: 5px;
+        padding: 5px;
+        border-top: 1px dashed #dddddd;
+    }
+
+    .column-name .cart-yield,
+    .column-name .column-number {
+        display: none;
+    }
+
+    .column-name {
+        justify-content: space-around;
+    }
+
+    .cart-content-left .cart-yield,
+    .cart-content-left .cart-item-yield {
+        flex: 9;
+    }
+
+    .pay-right .into-money {
+        flex: 70%;
+    }
+
+    .pay-right .cart-payment {
+        flex: 30%;
+    }
+}
